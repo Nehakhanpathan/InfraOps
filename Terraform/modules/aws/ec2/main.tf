@@ -3,7 +3,7 @@ resource "aws_instance" "vm" {
   instance_type = var.ec2_type
   ami = var.ami_type
 
-  key_name = "r2k"
+  key_name = "r2kk"
 # !! we can use security_groups = ["sg-group name"]  if we want to use name !!
   subnet_id = var.subnet_id
   vpc_security_group_ids = [ aws_security_group.ec2_sg.id ]
